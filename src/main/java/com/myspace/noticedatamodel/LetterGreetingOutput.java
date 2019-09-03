@@ -6,12 +6,23 @@ package com.myspace.noticedatamodel;
 
 public class LetterGreetingOutput implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LetterGreetingOutput() {
-    }
+	private java.lang.String lgCode;
 
+	public LetterGreetingOutput() {
+	}
 
+	public java.lang.String getLgCode() {
+		return this.lgCode;
+	}
 
+	public void setLgCode(java.lang.String lgCode) {
+		this.lgCode = lgCode;
+	}
+
+	public LetterGreetingOutput(java.lang.String lgCode) {
+		this.lgCode = lgCode;
+	}
 
 }

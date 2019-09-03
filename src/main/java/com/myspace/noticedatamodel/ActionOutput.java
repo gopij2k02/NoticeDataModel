@@ -6,12 +6,23 @@ package com.myspace.noticedatamodel;
 
 public class ActionOutput implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ActionOutput() {
-    }
+	private java.lang.String actionCode;
 
+	public ActionOutput() {
+	}
 
+	public java.lang.String getActionCode() {
+		return this.actionCode;
+	}
 
+	public void setActionCode(java.lang.String actionCode) {
+		this.actionCode = actionCode;
+	}
+
+	public ActionOutput(java.lang.String actionCode) {
+		this.actionCode = actionCode;
+	}
 
 }

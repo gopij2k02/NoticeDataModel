@@ -21,8 +21,6 @@ public class PPD implements java.io.Serializable {
 	private java.lang.Boolean programRenewInd;
 	private java.lang.String specialCategory;
 
-	private java.util.List<com.myspace.noticebusinessrules.Action> actionList;
-
 	private java.lang.String programCode;
 
 	private java.lang.String programCategory;
@@ -132,15 +130,6 @@ public class PPD implements java.io.Serializable {
 		this.specialCategory = specialCategory;
 	}
 
-	public java.util.List<com.myspace.noticebusinessrules.Action> getActionList() {
-		return this.actionList;
-	}
-
-	public void setActionList(
-			java.util.List<com.myspace.noticebusinessrules.Action> actionList) {
-		this.actionList = actionList;
-	}
-
 	public java.lang.String getProgramCode() {
 		return this.programCode;
 	}
@@ -208,6 +197,38 @@ public class PPD implements java.io.Serializable {
 		this.programRenewInd = programRenewInd;
 		this.specialCategory = specialCategory;
 		this.actionList = actionList;
+		this.programCode = programCode;
+		this.programCategory = programCategory;
+		this.outputActionCode = outputActionCode;
+		this.programDenielReason = programDenielReason;
+		this.generalTypeCode = generalTypeCode;
+	}
+
+	public PPD(java.lang.Long appID, java.lang.String coverageTypeCode,
+			java.time.LocalDateTime dispositionDate,
+			java.lang.Boolean dispositionInd,
+			java.lang.String dispositionStatusCode,
+			java.lang.String eligibilityCategory,
+			java.lang.String eligibleKeyCode, java.lang.Short generalTypeID,
+			java.lang.Short msn, java.lang.Long pid,
+			java.lang.Boolean programRenewInd,
+			java.lang.String specialCategory, java.lang.String programCode,
+			java.lang.String programCategory,
+			java.lang.String outputActionCode,
+			java.lang.String programDenielReason,
+			java.lang.String generalTypeCode) {
+		this.appID = appID;
+		this.coverageTypeCode = coverageTypeCode;
+		this.dispositionDate = dispositionDate;
+		this.dispositionInd = dispositionInd;
+		this.dispositionStatusCode = dispositionStatusCode;
+		this.eligibilityCategory = eligibilityCategory;
+		this.eligibleKeyCode = eligibleKeyCode;
+		this.generalTypeID = generalTypeID;
+		this.msn = msn;
+		this.pid = pid;
+		this.programRenewInd = programRenewInd;
+		this.specialCategory = specialCategory;
 		this.programCode = programCode;
 		this.programCategory = programCategory;
 		this.outputActionCode = outputActionCode;

@@ -47,6 +47,8 @@ public class PPD implements java.io.Serializable {
 
 	private java.lang.String applicationType;
 
+	private int noticeTypeID;
+
 	public PPD() {
 	}
 
@@ -250,6 +252,14 @@ public class PPD implements java.io.Serializable {
 		this.applicationType = applicationType;
 	}
 
+	public int getNoticeTypeID() {
+		return this.noticeTypeID;
+	}
+
+	public void setNoticeTypeID(int noticeTypeID) {
+		this.noticeTypeID = noticeTypeID;
+	}
+
 	public PPD(java.lang.Long appID, java.lang.String coverageTypeCode,
 			java.time.LocalDateTime dispositionDate,
 			java.lang.Boolean dispositionInd,
@@ -267,7 +277,7 @@ public class PPD implements java.io.Serializable {
 			java.lang.String caaCode, java.lang.String responseRequiredCode,
 			java.lang.String kidscareSwitch,
 			java.lang.Boolean flagCustomerLogin,
-			java.lang.String applicationType) {
+			java.lang.String applicationType, int noticeTypeID) {
 		this.appID = appID;
 		this.coverageTypeCode = coverageTypeCode;
 		this.dispositionDate = dispositionDate;
@@ -293,6 +303,7 @@ public class PPD implements java.io.Serializable {
 		this.kidscareSwitch = kidscareSwitch;
 		this.flagCustomerLogin = flagCustomerLogin;
 		this.applicationType = applicationType;
+		this.noticeTypeID = noticeTypeID;
 	}
 
 }
